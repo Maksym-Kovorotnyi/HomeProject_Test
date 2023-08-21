@@ -2,10 +2,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="#" />
     <title>Home project</title>
   </head>
   <body>
     <header>
+      <svg width="70" height="40">
+        <use href="./images/icons/icons.svg#logo"></use>
+      </svg>
       <nav>
         <ul>
           <li>Home</li>
@@ -20,8 +24,16 @@
       <section class="Hero">
         <div>
           <h1><span>Project</span>Home</h1>
-          <!-- svg for arrow left -->
-          <!-- svg for arrow right -->
+          <div>
+            <svg width="17" height="8">
+              <use href="./images/icons/icons.svg#arrowLeft"></use>
+            </svg>
+          </div>
+          <div>
+            <svg width="17" height="8">
+              <use href="./images/icons/icons.svg#arrowRight"></use>
+            </svg>
+          </div>
           <p>01</p>
           <div></div>
           <p>02</p>
@@ -30,7 +42,9 @@
           <img src="#" alt="house example" />
           <div>
             <p>See more</p>
-            <div></div>
+            <svg width="17" height="8">
+              <use href="./images/icons/icons.svg#arrowRight"></use>
+            </svg>
           </div>
         </div>
       </section>
@@ -40,8 +54,8 @@
           <img src="#" alt="building" />
         </div>
         <div>
-          <img src="" alt="" />
-          <h1>About company</h1>
+          <img src="#" alt="building" />
+          <h2>About company</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -52,14 +66,162 @@
           </p>
           <div>
             <p>Read about</p>
-            <!-- svg for arrow right -->
+            <svg width="17" height="8">
+              <use href="./images/icons/icons.svg#arrowRight"></use>
+            </svg>
           </div>
         </div>
       </section>
-      <section class="Tasks"></section>
-      <section class="Projects"></section>
-      <section class="Contacts"></section>
+      <section class="Tasks">
+        <h2>Main tasks</h2>
+        <p>1</p>
+        <p>
+          Creating comfortable conditions and improving the quality of customer
+          service
+        </p>
+        <p>2</p>
+        <p>
+          Continuously improve the quality of services provided through staff
+          training, purchase of new equipment and enhanced market advertising
+        </p>
+      </section>
+      <section class="Projects">
+        <h2>Our projects</h2>
+        <ul>
+          <li>
+            <p>Entertainment center</p>
+            <p>Read more</p>
+            <svg width="17" height="8">
+              <use href="./images/icons/icons.svg#arrowRight"></use>
+            </svg>
+          </li>
+          <li>
+            <p>Entertainment center</p>
+            <p>Read more</p>
+            <svg width="17" height="8">
+              <use href="./images/icons/icons.svg#arrowRight"></use>
+            </svg>
+          </li>
+          <li>
+            <p>Entertainment center</p>
+            <p>Read more</p>
+            <svg width="17" height="8">
+              <use href="./images/icons/icons.svg#arrowRight"></use>
+            </svg>
+          </li>
+          <li>
+            <p>Entertainment center</p>
+            <p>Read more</p>
+            <svg width="17" height="8">
+              <use href="./images/icons/icons.svg#arrowRight"></use>
+            </svg>
+          </li>
+          <li>
+            <p>Entertainment center</p>
+            <p>Read more</p>
+            <svg width="17" height="8">
+              <use href="./images/icons/icons.svg#arrowRight"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+      <div>
+        <p>All projects</p>
+        <svg width="17" height="8">
+          <use href="./images/icons/icons.svg#arrowRight"></use>
+        </svg>
+      </div>
+      <section class="Contacts">
+        <h2>Contact us</h2>
+        <form action="../src/index.html">
+          <input type="text" name="firstName" placeholder="First name" />
+          <input type="number" name="phone" placeholder="Phone number" />
+          <input type="email" name="mail" placeholder="Email" />
+          <input type="text" name="service" placeholder="product/service" />
+          <textarea
+            name="message"
+            placeholder="Message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <p>By submitting your application you agree to privacy policy</p>
+          <button type="submit">Send</button>
+          <svg width="17" height="8">
+            <use href="./images/icons/icons.svg#arrowRight"></use>
+          </svg>
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <svg width="70" height="40">
+        <use href="./images/icons/icons.svg#logo"></use>
+      </svg>
+      <nav>
+        <h2>Information</h2>
+        <ul>
+          <li>Home</li>
+          <li>Gallery</li>
+          <li>Projects</li>
+          <li>Certificates</li>
+          <li>Contacts</li>
+        </ul>
+      </nav>
+      <address>
+        <ul class="list-footer list">
+          <li class="list-footer__item">
+            <a
+              href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="list-footer__link location link"
+              >Kyiv, 26 Lesi Ukrainky Ave.</a
+            >
+          </li>
+          <li class="list-footer__item">
+            <a href="mailto:info@devstudio.com" class="list-footer__link link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="list-footer__item">
+            <a href="tel:+380961111111" class="list-footer__link link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="join-container">
+        <h2 class="join-container__title">Social networks</h2>
+        <ul class="social-networks--footer list">
+          <li class="social-networks__item">
+            <a href="" class="social-networks__link--footer link">
+              <svg class="social-networks__icon--footer" width="20" height="20">
+                <use href="#"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a href="#" class="social-networks__link--footer link">
+              <svg class="social-networks__icon--footer" width="20" height="20">
+                <use href="#"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a href="" class="social-networks__link--footer link">
+              <svg class="social-networks__icon--footer" width="20" height="20">
+                <use href="#"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-networks__item">
+            <a href="" class="social-networks__link--footer link">
+              <svg class="social-networks__icon--footer" width="20" height="20">
+                <use href="#"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
