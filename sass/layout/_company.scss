@@ -1,0 +1,64 @@
+.company-container {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-right: 70px;
+  background-color: var(--bcg-firth);
+}
+
+.images-container {
+  display: flex;
+  align-items: center;
+
+  margin-right: 30px;
+  &__left {
+    width: 270px;
+    margin-right: 30px;
+    &--img {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.text-container {
+  width: 400px;
+  &__title {
+    color: var(--title-main);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: calc(64 / 64);
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: calc(25 / 16);
+    margin-bottom: 20px;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 222px;
+    height: 71px;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: var(--bcg-third);
+    }
+    &:active {
+      box-shadow: 7px 10px 53px 0px rgba(189, 189, 189, 0.6) inset;
+    }
+    &--text {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: calc(12 / 12);
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      margin-right: 12px;
+    }
+  }
+}

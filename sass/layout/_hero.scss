@@ -1,0 +1,97 @@
+.hero-container {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.hero-name-container {
+  padding-top: 336px;
+  margin-right: auto;
+  &__title {
+    display: grid;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: calc(64 / 64);
+    margin-bottom: 90px;
+    &--first-word {
+      color: var(--title-main);
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: calc(64 / 64);
+    }
+  }
+  &__arrows {
+    display: flex;
+    gap: 23px;
+    margin-bottom: 94px;
+    &--arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 53px;
+      height: 53px;
+      border: 1px solid #f2f2f2;
+      background-color: #f9f9f9;
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        background-color: var(--bcg-third);
+      }
+      &:active {
+        box-shadow: 7px 10px 53px 0px rgba(189, 189, 189, 0.6) inset;
+      }
+    }
+  }
+  &__numbers-container {
+    display: flex;
+    align-items: center;
+    &--number {
+      color: var(--title-main);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: calc(24 / 24);
+    }
+    &--slash {
+      width: 44px;
+      height: 1px;
+      background: #e0e0e0;
+      transform: rotateZ(135deg);
+    }
+  }
+}
+
+.hero-image-container {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 770px;
+  height: 830px;
+  background-image: url("../../images/hero-section/hero-img-@2x.png");
+  background-size: cover;
+  &__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 222px;
+    height: 71px;
+    background-color: var(--bcg-main);
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: var(--bcg-third);
+    }
+    &:active {
+      box-shadow: 7px 10px 53px 0px rgba(189, 189, 189, 0.6) inset;
+    }
+    &--text {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: calc(12 / 12);
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      margin-right: 12px;
+    }
+  }
+}

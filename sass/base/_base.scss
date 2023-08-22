@@ -1,0 +1,21 @@
+body {
+  // background-color: var(--bcg-main);
+  background-color: beige;
+  color: var(--text-main);
+  font-family: var(--font-main);
+  padding: 0px 135px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
