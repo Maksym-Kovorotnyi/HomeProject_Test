@@ -1,0 +1,34 @@
+.tasks-title {
+  color: var(--title-main);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: calc(64 / 64);
+  margin-bottom: 62px;
+}
+
+.tasks-list {
+  display: flex;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    &--number {
+      width: 114px;
+      color: #f2f2f2;
+      font-family: var(--font-secondary);
+      font-size: 200px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+    &--text {
+      font-size: 22px;
+      line-height: calc(36 / 24);
+    }
+  }
+  &__item:first-child {
+    margin-right: 187px;
+  }
+}

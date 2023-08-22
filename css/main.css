@@ -252,6 +252,40 @@ a {
   margin-right: 12px;
 }
 
+.tasks-title {
+  color: var(--title-main);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 62px;
+}
+
+.tasks-list {
+  display: flex;
+}
+.tasks-list__item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.tasks-list__item--number {
+  width: 114px;
+  color: #f2f2f2;
+  font-family: var(--font-secondary);
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.tasks-list__item--text {
+  font-size: 22px;
+  line-height: 1.5;
+}
+.tasks-list__item:first-child {
+  margin-right: 187px;
+}
+
 :root {
   --bcg-main: #ffffff;
   --bcg-secondary: #2c2c2c;
