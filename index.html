@@ -161,76 +161,129 @@
       </section>
       <!-- Example of projects section -->
       <section class="section container">
-        <h2>Our projects</h2>
-        <ul>
-          <li>
-            <p>Entertainment center</p>
-            <p>Read more</p>
-            <svg width="17" height="8">
-              <use href="./images/icons/icons.svg#arrowRight"></use>
+          <h2 class="projects-title">Our projects</h2>
+          <ul class="projects-list">
+            <li class="projects-list__item" style="width:570px; 
+                height: 255px;">
+              <img
+                src="./images/projects/proj-left-top@2x.png"
+                alt="project example"
+                class="projects-list__item--img"
+                width="570"
+              />
+              <div class="projects-text-container">
+                <p class="projects-text-container__text">Entertainment center</p>
+                <button type="button" class="projects-text-container__btn">Details</button>
+                <svg width="17" height="8">
+                  <use href="./images/icons/icons.svg#arrowRight" class="projects-text-container__icon"></use>
+                </svg>
+              </div>
+              </li>
+            <li class="projects-list__item" style="width:570px; 
+                height: 255px;">
+              <img
+                src="./images/projects/proj-right-top@2x.png"
+                alt="project example"
+                width="570"
+                class="projects-list__item--img"
+              />
+              <div class="projects-text-container">
+                <p class="projects-text-container__text">Museum</p>
+                <button type="button" class="projects-text-container__btn">Details</button>
+                <svg width="17" height="8">
+                  <use href="./images/icons/icons.svg#arrowRight" class="projects-text-container__icon"></use>
+                </svg>
+              </div>
+              </li>
+            <li class="projects-list__item" style="width: 270px; height: 255px;">
+              <img
+                src="./images/projects/proj-left-bottom@2x.png"
+                alt="project example"
+                width="270"
+                class="projects-list__item--img"
+              />
+              <div class="projects-text-container">
+                <p class="projects-text-container__text">Parking</p>
+                <button type="button" class="projects-text-container__btn">Details</button>
+                <svg width="17" height="8">
+                  <use href="./images/icons/icons.svg#arrowRight" class="projects-text-container__icon"></use>
+                </svg>
+              </div>
+              </li>
+            <li class="projects-list__item" style="width: 470px; height: 255px;">
+              <img
+                src="./images/projects/proj-mid-bottom@2x.png"
+                alt="project example"
+                width="470"
+                class="projects-list__item--img"
+              />
+              <div class="projects-text-container">
+                <p class="projects-text-container__text">Residential area</p>
+                <button type="button" class="projects-text-container__btn">Details</button>
+                <svg width="17" height="8">
+                  <use href="./images/icons/icons.svg#arrowRight" class="projects-text-container__icon"></use>
+                </svg>
+              </div>
+              </li>
+            <li class="projects-list__item" style="width: 370px; height: 255px;">
+              <img
+                src="./images/projects/proj-right-bottom@2x.png"
+                alt="project example"
+                width="370"
+                class="projects-list__item--img"
+              />
+              <div class="projects-text-container">
+                <p class="projects-text-container__text">Theater</p>
+                <button type="button" class="projects-text-container__btn">Details</button>
+                <svg width="17" height="8" >
+                  <use href="./images/icons/icons.svg#arrowRight" class="projects-text-container__icon"></use>
+                </svg>
+              </div>
+              </li>
+          </ul>
+          <div class="projects-btn-container">
+            <p class="projects-btn-container__text">All projects</p>
+            <svg width="17" height="8" class="projects-btn-container__icon-container">
+              <use href="./images/icons/icons.svg#arrowRight" class="projects-btn-container__icon-container--icon"></use>
             </svg>
-          </li>
-          <li>
-            <p>Entertainment center</p>
-            <p>Read more</p>
-            <svg width="17" height="8">
-              <use href="./images/icons/icons.svg#arrowRight"></use>
-            </svg>
-          </li>
-          <li>
-            <p>Entertainment center</p>
-            <p>Read more</p>
-            <svg width="17" height="8">
-              <use href="./images/icons/icons.svg#arrowRight"></use>
-            </svg>
-          </li>
-          <li>
-            <p>Entertainment center</p>
-            <p>Read more</p>
-            <svg width="17" height="8">
-              <use href="./images/icons/icons.svg#arrowRight"></use>
-            </svg>
-          </li>
-          <li>
-            <p>Entertainment center</p>
-            <p>Read more</p>
-            <svg width="17" height="8">
-              <use href="./images/icons/icons.svg#arrowRight"></use>
-            </svg>
-          </li>
-        </ul>
-
-        <div>
-          <p>All projects</p>
-          <svg width="17" height="8">
-            <use href="./images/icons/icons.svg#arrowRight"></use>
-          </svg>
+          </div>
         </div>
       </section>
       <!-- Contacts section -->
       <section class="section container">
-        <h2>Contact us</h2>
-        <form action="../src/index.html">
-          <input type="text" name="firstName" placeholder="First name" />
-          <input type="number" name="phone" placeholder="Phone number" />
-          <input type="email" name="mail" placeholder="Email" />
-          <input type="text" name="service" placeholder="product/service" />
+        <h2 class="contacts-title">Contact us</h2>
+        <div class="contacts-container">
+        <form action="../src/index.html" class="contacts-form">
+          <input class="contacts-form__input" type="text" name="firstName" placeholder="First name" />
+          <input class="contacts-form__input" type="tel" name="phone" placeholder="Phone number*" required/>
+          <input class="contacts-form__input" type="email" name="mail" placeholder="Email*" required/>
+          <input class="contacts-form__input" type="text" name="service" placeholder="Product/service" />
           <textarea
+          class="contacts-form__textarea"
             name="message"
-            placeholder="Message"
-            cols="30"
-            rows="10"
+            placeholder="Message*"
+            required
           ></textarea>
-          <p>By submitting your application you agree to privacy policy</p>
-          <button type="submit">Send</button>
+          <div class="contacts-form-agreement-container">
+            <div class="contacts-form-agreement-container__checkbox"></div>
+          <p class="contacts-form-agreement-container_text">By submitting your application you agree to privacy policy</p>
+          </div>
+          <div class="btn-container">
+          <button class="btn-container__btn" type="submit">Send</button>
           <svg width="17" height="8">
-            <use href="./images/icons/icons.svg#arrowRight"></use>
+            <use href="./images/icons/icons.svg#arrowRight" style="fill: #fff;"></use>
           </svg>
+          </div>
         </form>
+        <div class="contacts-bcg-image">
+          <!-- bcg image here -->
+        </div>
+        </div>
       </section>
     </main>
     <!-- Footer section -->
     <footer class="footer container">
+      <div class="footer-container">
       <svg width="70" height="40">
         <use href="./images/icons/icons.svg#logo"></use>
       </svg>
@@ -299,6 +352,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </div>
     </footer>
   </body>
