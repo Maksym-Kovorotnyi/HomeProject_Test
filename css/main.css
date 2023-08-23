@@ -2,7 +2,6 @@ body {
   background-color: var(--bcg-main);
   color: var(--text-main);
   font-family: var(--font-main);
-  padding: 0 auto;
 }
 
 h1,
@@ -448,6 +447,107 @@ a {
   background: var(--title-main);
   background-image: url("../../images/contacts/image 12contscts-img.png");
   background-size: cover;
+}
+
+.footer-container {
+  display: flex;
+  background-color: var(--bcg-secondary);
+  padding-top: 58px;
+  padding-bottom: 60px;
+  padding-left: 116px;
+}
+
+.footer-nav {
+  margin-right: 157px;
+}
+
+.footer-title {
+  color: var(--bcg-main);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1428571429;
+  margin-bottom: 25px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-nav-list__item--link {
+  position: relative;
+  color: var(--bcg-main);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7142857143;
+  letter-spacing: 0.42px;
+}
+.footer-nav-list__item--link:focus {
+  outline: none;
+}
+.footer-nav-list__item--link:hover::after, .footer-nav-list__item--link:focus::after {
+  content: " ";
+  position: absolute;
+  top: 17px;
+  width: 100%;
+  height: 1px;
+  transform: translate(-100%);
+  background-color: var(--bcg-main);
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.footer-contacts-list__item {
+  margin-bottom: 30px;
+}
+.footer-contacts-list__item--link {
+  position: relative;
+  color: var(--bcg-main);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7142857143; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+.footer-contacts-list__item--link:focus {
+  outline: none;
+}
+.footer-contacts-list__item--link:hover::after, .footer-contacts-list__item--link:focus::after {
+  content: " ";
+  position: absolute;
+  top: 17px;
+  width: 100%;
+  height: 1px;
+  transform: translate(-100%);
+  background-color: var(--bcg-main);
+}
+
+.join-list {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--bcg-main);
+}
+
+.copyright {
+  width: 100%;
+  height: 70px;
+  background-color: var(--bcg-secondary);
+  text-align: center;
+  padding-top: 24px;
+}
+.copyright__title {
+  color: #c8c8c8;
+  opacity: 0.5;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8333333333;
 }
 
 :root {
