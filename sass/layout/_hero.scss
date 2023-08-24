@@ -67,7 +67,8 @@
   flex-direction: column-reverse;
   width: 770px;
   height: 830px;
-  background-image: url("../../images/hero-section/hero-img-@2x.png");
+  background-color: var(--bcg-third);
+  background-image: url("../images/hero-section/hero-img-@2x.png");
   background-size: cover;
   &__btn-container {
     display: flex;

@@ -153,7 +153,8 @@ a {
   flex-direction: column-reverse;
   width: 770px;
   height: 830px;
-  background-image: url("../../images/hero-section/hero-img-@2x.png");
+  background-color: var(--bcg-third);
+  background-image: url("../images/hero-section/hero-img-@2x.png");
   background-size: cover;
 }
 .hero-image-container__btn-container {
@@ -486,7 +487,7 @@ a {
   width: 749px;
   height: 369px;
   background: var(--title-main);
-  background-image: url("../../images/contacts/image 12contscts-img.png");
+  background-image: url("../images/contacts/image 12contscts-img.png");
   background-size: cover;
 }
 
