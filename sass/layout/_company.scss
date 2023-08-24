@@ -9,7 +9,6 @@
 .images-container {
   display: flex;
   align-items: center;
-
   margin-right: 30px;
   &__left {
     width: 270px;
@@ -17,6 +16,15 @@
     &--img {
       margin-bottom: 30px;
     }
+  }
+}
+.images {
+  transition-property: transform;
+  transition-duration: 250ms;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    transform: scale(1.1);
   }
 }
 

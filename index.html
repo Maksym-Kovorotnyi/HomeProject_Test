@@ -22,16 +22,11 @@
   <body>
     <!-- Header section -->
     <header class="header container">
-      <div class="header-logo">
+      <a class="header-logo" href="#">
         <svg width="70" height="40">
           <use href="./images/icons/icons.svg#logo"></use>
         </svg>
-        <img
-          class="header-logo__img"
-          src="./images/logo-text.png"
-          alt="digital project"
-        />
-      </div>
+      </a>
       <nav class="header-navigation">
         <ul class="header-navigation-list">
           <li class="header-navigation-list__item">
@@ -97,13 +92,14 @@
           <div class="images-container">
             <div class="images-container__left">
               <img
-                class="images-container__left--img"
+                class="images-container__left--img images"
                 src="./images/company-section/Rectangle 8top-left-buld@2x.png"
                 alt="building"
                 width="270px"
                 height="265px"
               />
               <img
+              class="images"
                 src="./images/company-section/Rectangle 10bottom-left-build@2x.png"
                 alt="building"
                 width="270px"
@@ -111,6 +107,7 @@
               />
             </div>
             <img
+            class="images"
               src="./images/company-section/Rectangle 9middle-right-build@2x.png"
               alt="building"
               width="270px"
@@ -265,8 +262,22 @@
             required
           ></textarea>
           <div class="contacts-form-agreement-container">
-            <div class="contacts-form-agreement-container__checkbox"></div>
-          <p class="contacts-form-agreement-container_text">By submitting your application you agree to privacy policy</p>
+             <input
+                class="contacts-form-agreement-container__checkbox visually-hidden"
+                type="checkbox"
+                name="agreement"
+                id="agreement"
+
+              />
+              <label class="contacts-form-agreement-container__text" for="agreement">
+                <svg class="contacts-form-agreement-container__uncheck-icon" width="24" height="24">
+                  <use href="./images/icons/icons.svg#icon-uncheck"></use>
+                </svg>
+                <svg class="contacts-form-agreement-container__check-icon" width="24" height="24">
+                  <use href="./images/icons/icons.svg#icon-check"></use>
+                </svg>
+                By submitting your application you agree to privacy policy</label
+              >
           </div>
           <div class="btn-container">
           <button class="btn-container__btn" type="submit">Send</button>
@@ -284,9 +295,11 @@
     <!-- Footer section -->
     <footer class="footer container">
       <div class="footer-container">
-      <svg width="70" height="40">
-        <use href="#"></use>
-      </svg>
+      <a class="footer-logo" href="#">
+        <svg width="100" height="80">
+          <use href="./images/icons/icons.svg#logo" style="fill:#fff;"></use>
+        </svg>
+     </a>
       <nav class="footer-nav">
         <h2 class="footer-title">Information</h2>
         <ul class="footer-nav-list">

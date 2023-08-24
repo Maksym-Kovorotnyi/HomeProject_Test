@@ -41,12 +41,6 @@ a {
   position: relative;
   margin-right: 330px;
 }
-.header-logo__img {
-  position: absolute;
-  width: 68px;
-  height: 12px;
-  top: 27px;
-}
 
 .header-navigation {
   height: 100%;
@@ -206,6 +200,15 @@ a {
 }
 .images-container__left--img {
   margin-bottom: 30px;
+}
+
+.images {
+  transition-property: transform;
+  transition-duration: 250ms;
+}
+.images:hover, .images:focus {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .text-container {
@@ -415,6 +418,44 @@ a {
   outline: solid var(--bcg-third);
 }
 
+.contacts-form-agreement-container__check-icon {
+  opacity: 0;
+  position: absolute;
+  transition-property: opacity;
+  margin-right: 10px;
+}
+.contacts-form-agreement-container__check-icon:hover {
+  cursor: pointer;
+}
+
+.contacts-form-agreement-container__uncheck-icon {
+  transition-property: opacity;
+  transition-duration: 350ms;
+  margin-right: 10px;
+}
+.contacts-form-agreement-container__uncheck-icon:hover {
+  cursor: pointer;
+}
+
+.contacts-form-agreement-container__checkbox:checked + .contacts-form-agreement-container__text .contacts-form-agreement-container__check-icon {
+  opacity: 1;
+  position: static;
+}
+
+.contacts-form-agreement-container__checkbox:checked + .contacts-form-agreement-container__text .contacts-form-agreement-container__uncheck-icon {
+  opacity: 0;
+  position: absolute;
+}
+
+.contacts-form-agreement-container__text {
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+.contacts-form-agreement-container__text:hover {
+  cursor: pointer;
+}
+
 .btn-container {
   width: 221px;
   height: 71px;
@@ -455,6 +496,12 @@ a {
   padding-top: 58px;
   padding-bottom: 60px;
   padding-left: 116px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 80px;
+  margin-right: 100px;
 }
 
 .footer-nav {
